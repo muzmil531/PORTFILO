@@ -1,0 +1,210 @@
+* {
+  font-family: verdana;
+}
+
+/* Button Style */
+button {
+  background-color: #0000d6;
+  border-radius: 30px;
+  padding: 2%;
+  color: #fff;
+}
+
+/* Footer Style */
+footer {
+  background-color: #3b3b3b;
+  text-align: center;
+  color: #fff;
+  padding: 0.5%;
+  margin-top: 1%;
+}
+
+/* animated effect to Buttons */
+button:hover {
+  background-color: #086862;
+}
+
+/* Aligning h2 tags */
+h2 {
+  margin-left: 2%;
+}
+
+/* HEADDER */
+.parent1 {
+  display: flex;
+  flex-direction: row;
+  border-style: groove;
+  border: 1px solid #6b6b6b;
+  box-shadow: 2px 2px 2px 2px #666147;
+}
+
+/* child 1 of headder */
+.child1a {
+  width: 30%;
+  padding-top: 1%;
+}
+
+/* child 2 of headder */
+.child1b {
+  width: 70%;
+  padding-right: 7px;
+}
+
+/* logo */
+.logo {
+  width: 20%;
+  padding-left: 5%;
+}
+
+/* company name */
+.headding {
+  text-align: right;
+  font-family: 'Patua One', cursive;
+}
+
+/* BANNER */
+.banner {
+  width: 99%;
+  height: 450px;
+  border: 3px solid #000;
+}
+
+/* banner SECTION */
+.parent2 {
+  text-align: center;
+}
+
+/* FEATURED CARD section */
+.parent3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* cards */
+.child3a, .child3b, .child3c {
+  width: 31%;
+  text-align: center;
+  height: 100%;
+  border: 1px solid #6b6b6b;
+  padding: 1%;
+  margin: 1%;
+  box-shadow: 2px 2px 2px 2px;
+  border-radius: 30px;
+}
+
+/* Styled effects to CARDS */
+.child3a:hover, .child3b:hover, .child3c:hover {
+  border: solid 1px #6b6b6b;
+  -moz-box-shadow: 1px 1px 5px #6b6b6b;
+  -webkit-box-shadow: 1px 1px 5px #6b6b6b;
+  box-shadow: 1px 1px 5px #6b6b6b;
+  background-color: #000;
+  color: #fff;
+}
+
+/* card images transition and effects */
+.immg {
+  width: 100%;
+  height: 70%;
+  border-radius: 30px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* transition effects to card images */
+.immg:hover {
+  transform: scale(0.9);
+  border: 3px solid #fff;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  font-family: 'Courgette', cursive;
+}
+
+/* mobile mode */
+@media only screen and (min-width:320px) and (max-width:767px) {
+  .child1a, .child1b {
+    width: 100%;
+  }
+
+  .parent1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .headding {
+    text-align: center;
+  }
+
+  .banner {
+    height: 100%;
+  }
+
+  .parent3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .child3a, .child3b, .child3c {
+    width: 96%;
+    margin: 1%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 4%;
+  }
+}
+
+/* TABLET MODE */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .child1a, .child1b {
+    width: 100%;
+  }
+
+  .parent1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  .headding {
+    text-align: center;
+  }
+
+  .banner {
+    height: 100%;
+  }
+
+  .child3a, .child3b, .child3c {
+    width: 40%;
+    margin: 1%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 2%;
+  }
+
+  .parent3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
